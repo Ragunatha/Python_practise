@@ -33,5 +33,3 @@ x1, y1 = 2, 3
 x2, y2 = 10, 8
 distance = math.hypot(x2 - x1, y2 - y1)#To hypot is the function which is used to find the Euclidean distance between two points in a 2D space.
 print(distance)
-
-print(len('Hello, World!'))
