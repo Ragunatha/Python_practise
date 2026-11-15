@@ -54,3 +54,12 @@ x_intercept = (y-b)/m
 print("X_intercept : ",x_intercept)
 
 '''Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)'''
+import math
+x1,y1=2,2
+x2,y2=6,10
+m=(y2-y1)/(x2-x1)
+print("The slope m : ",m)
+p1=(2,2)
+p2=(6,10)
+Euclidean_distance = math.dist(p1,p2)
+print("Euclidean_Distance : ",Euclidean_distance)
