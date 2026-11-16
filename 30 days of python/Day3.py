@@ -41,25 +41,38 @@ circumference_of_circle = math.pi*r*2
 
 '''Calculate the slope, x-intercept and y-intercept of y = 2x -2'''
 #Actually the slop equation is y=mx+b here 'm' is the slope
-m=2#slope is already given
+m_8=2#slope is already given
 b=-2
 #need to find y_intercept and x_intercept
 #To find Y_intercept x should be zero(i.e)x=0
 x=0
-y_intercept = m * x + b
+y_intercept = m_8 * x + b
 print("Y_intercept : ",y_intercept)
 #To find X_intercept y should be zero(i.e)y=0
 y=0
-x_intercept = (y-b)/m
+x_intercept = (y-b)/m_8
 print("X_intercept : ",x_intercept)
 
 '''Slope is (m = y2-y1/x2-x1). Find the slope and Euclidean distance between point (2, 2) and point (6,10)'''
 import math
 x1,y1=2,2
 x2,y2=6,10
-m=(y2-y1)/(x2-x1)
-print("The slope m : ",m)
+m_9=(y2-y1)/(x2-x1)
+print("The slope m : ",m_9)
 p1=(2,2)
 p2=(6,10)
 Euclidean_distance = math.dist(p1,p2)
 print("Euclidean_Distance : ",Euclidean_distance)
+
+'''Compare the slopes in tasks 8 and 9.'''
+m_8=2
+m_9=2.0
+The_slope= "Both are same" if m_8 == m_9 else m_9
+
+'''Calculate the value of y (y = x^2 + 6x + 9). 
+Try to use different x values and figure out at what x value y is going to be 0.'''
+for x in range (-4,1):
+    y=x**2+6*x+9
+    print(f"x value : ,{x}    y value : ,{y}")
+
+
