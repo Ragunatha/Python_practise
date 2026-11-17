@@ -90,6 +90,54 @@ if 'jargon' in a:
     print("True")
 
 '''There is no 'on' in both dragon and python'''
+print('on' not in 'dragon' and 'on' not in 'python')
 
-if 'on' not in 'dragon' and 'python':
-    print("There is no 'on' in both dragon and python")
+'''Find the length of the text python and convert the value to float and convert it to string'''
+a='python'
+b=len(a)
+c=float(b)
+d=str(c)
+print(type(c),type(d))
+
+'''Even numbers are divisible by 2 and the remainder is zero. How do you check if a number is even or not using python?'''
+a=int(input())
+if a%2==0:
+    print(a,"even number")
+else:
+    print("Odd number")
+
+'''Check if the floor division of 7 by 3 is equal to the int converted value of 2.7.'''
+a=int(2.7)
+if 7//3==a:
+    print("True")
+print(type(a))
+
+'''Check if type of '10' is equal to type of 10'''
+print(type(10)==type('10'))
+
+'''Check if int('9.8') is equal to 10'''
+print(type(int(9.8))==type(10))
+print((int(9.8))==10)
+
+'''Write a script that prompts the user to enter hours and rate per hour. Calculate pay of the person?'''
+H=float(input("Enter the working hour: "))
+R_H=float(input("Enter the rate per hour: "))
+print("The weekly earning is: ",H*R_H)
+
+'''Write a script that prompts the user to enter number of years. 
+Calculate the number of seconds a person can live. Assume a person can live hundred years'''
+a=int(input("Enter number of years you have lived: "))
+print("You have lived for",a*31536000,"seconds")
+
+'''Write a Python script that displays the following table
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125'''
+
+a=1
+for a in range(1,6,1):
+    result=0
+    result+=a
+    print(result,result**0,result**1,result**2,result**3)
