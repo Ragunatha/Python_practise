@@ -75,4 +75,21 @@ for x in range (-4,1):
     y=x**2+6*x+9
     print(f"x value : ,{x}    y value : ,{y}")
 
+'''Find the length of 'python' and 'dragon' and make a falsy comparison statement.'''
+a='python'
+b='dragon'
+print(len(a)>len(b))
 
+'''Use and operator to check if 'on' is found in both 'python' and 'dragon'''
+if 'on' in 'dragon' and 'python':
+    print("True")
+
+'''I hope this course is not full of jargon. Use in operator to check if jargon is in the sentence.'''
+a='I hope this course is not full of jargon'
+if 'jargon' in a:
+    print("True")
+
+'''There is no 'on' in both dragon and python'''
+
+if 'on' not in 'dragon' and 'python':
+    print("There is no 'on' in both dragon and python")
