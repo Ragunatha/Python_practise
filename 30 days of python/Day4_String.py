@@ -32,3 +32,30 @@ print(company.replace('Coding','Python'))
 a="Python for Everyone"
 print(a.replace('Everyone','All'))#using .replace ()
 print(a[:11] + 'All')#In which a[:11] removes the Everyone by the character E-11 position of string
+word = a.split()
+print(word)
+word[-1]='All'#Syntax: separator.join(iterable)
+print(' '.join(word))#here the word is splited by seperate words and it's last word in statement gets  changed and joined back.
+'''Split the string 'Coding For All' using space as the separator (split()) .'''
+a='Coding For All'
+print(a.split())
+'''"Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon" split the string at the comma.'''
+a="Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon"
+print(a.split(','))
+'''What is the character at index 0 in the string Coding For All.'''
+a="Coding for All"
+print(a[0])
+'''What is the last index of the string Coding For All.'''
+a='Coding for All'
+print(a[-1])
+'''What character is at index 10 in "Coding For All" string.'''
+a='Coding for All'
+print(repr(a[10]))#repr-which seperately represents the space
+'''Create an acronym or an abbreviation for the name 'Python For Everyone'
+'''
+b="Python For Everyone"
+a=b.split()
+Acronymn=a[0][0]+a[1][0]+a[2][0]
+print(Acronymn)
+
+
