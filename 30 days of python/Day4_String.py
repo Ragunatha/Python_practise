@@ -58,4 +58,91 @@ a=b.split()
 Acronymn=a[0][0]+a[1][0]+a[2][0]
 print(Acronymn)
 
+'''Another-way:
+b="Python For Everyone"
+a=''.join(word[0].upper() for word in b.split())
+print(a)
+'''
 
+#Create an acronym or an abbreviation for the name 'Coding For All'.
+a='Coding For All'
+b=''.join(word[0].upper() for word in a.split())
+print(b)
+#Use index to determine the position of the first occurrence of C in Coding For All.
+a='Coding For All'
+print(a.index('C'))
+#Use index to determine the position of the first occurrence of F in Coding For All.
+a='Coding For All'
+print(a.index('F'))
+#Use rfind to determine the position of the last occurrence of l in Coding For All People.
+a='Coding For All People'
+print(a.rfind('l'))
+#Use index or find to find the position of the first occurrence of the word 'because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+a='You cannot end a sentence with because because because is a conjunction'
+print(a.index('because'))
+print(a.find('because'))
+#Use rindex to find the position of the last occurrence of the word because in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+a='You cannot end a sentence with because because because is a conjunction'
+print(a.rindex('because'))
+#Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
+a='You cannot end a sentence with because because because is a conjunction'
+print(a[31:54])#That is the last occurrence of because in index is 47 position you just add the length of that single last word (47 + 7 = 54)
+#Does 'Coding For All' start with a substring Coding?
+a='Coding For All'
+print(a.startswith('Coding'))
+#Does 'Coding For All' end with a substring coding?
+a='Coding For All'
+print(a.endswith('coding'))
+#'   Coding For All      '  , remove the left and right trailing spaces in the given string.
+a='   Coding For All      i'
+print(a.strip())#If you ever only want to remove spaces from one side, Python also has .lstrip() for the left side and .rstrip() for the right side.
+'''Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython
+thirty_days_of_python'''
+a='30DaysOfPython'
+b='thirty_days_of_python'
+print(a.isidentifier())#Python variable names cannot start with a digit like 3 shows false
+print(b.isidentifier())#True as output
+'''The following list contains the names of some of python libraries:
+ ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. 
+Join the list with a hash with space string.'''
+a=['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+print('# '.join(a ))#syntax separator.join(list_variable)
+'''Use the new line escape sequence to separate the following sentences.
+I am enjoying this challenge.
+I just wonder what is next.
+'''
+a='I am enjoying this challenge\nI just wonder what is next'
+print(a)
+'''Use a tab escape sequence to write the following lines.
+Name      Age     Country   City
+Asabeneh  250     Finland  '''
+a='Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki'
+print(a.expandtabs(10))
+'''Use the string formatting method to display the following:
+radius = 10
+area = 3.14 * radius ** 2
+The area of a circle with radius 10 is 314 meters square.
+'''
+radius = 10
+area = 3.14 * radius ** 2
+print('The area of a circle with radius {} is {} meters square.'.format(radius,area))
+'''Make the following using string formatting methods:
+8 + 6 = 14
+8 - 6 = 2
+8 * 6 = 48
+8 / 6 = 1.33
+8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144'''
+a=8
+b=6
+print(
+'{} + {} = {}\n'.format(a,b,a+b),
+'{} - {} = {}\n'.format(a,b,a-b),
+'{} + {} = {}\n'.format(a,b,a*b),
+'{} + {} = {:.2f}\n'.format(a,b,a/b),
+'{} + {} = {}\n'.format(a,b,a//b),
+'{} + {} = {}\n'.format(a,b,a%b),
+'{} + {} = {}\n'.format(a,b,a**b)
+)
